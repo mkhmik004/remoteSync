@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remote Sync | Connecting Remote Talent</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Remote<span class="highlight">Sync</span></div>
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact" class="btn-primary">Book a Call</a></li>
+        </ul>
+    </nav>
+
+    <header id="hero">
+        <div class="container hero-content">
+            <h1>Connecting Remote Talent <br> Scale Your Sales Pipeline</h1>
+            <p>Expert Sales Development Representatives ready to fill your calendar with qualified meetings. Let us handle prospecting while you focus on closing deals.</p>
+            <div class="btn-group">
+                <a href="#contact" class="btn-primary">Book a Consultation</a>
+                <a href="#services" class="btn-secondary">Explore Services</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="stats">
+        <div class="container stats-grid">
+            <div class="stat-item">
+                <h3>500+</h3>
+                <p>Meetings Booked Monthly</p>
+            </div>
+            <div class="stat-item">
+                <h3>98%</h3>
+                <p>Client Retention Rate</p>
+            </div>
+            <div class="stat-item">
+                <h3>45%</h3>
+                <p>Average Response Rate</p>
+            </div>
+            <div class="stat-item">
+                <h3>12+</h3>
+                <p>Years of Experience</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">Comprehensive SDR Services</h2>
+            <p class="section-subtitle">Everything you need to build a predictable revenue machine.</p>
+            
+            <div class="services-grid">
+                <div class="card">
+                    <h3>Cold Calling</h3>
+                    <p>Professional cold outreach to your ideal prospects. Our SDRs handle objections and book qualified appointments.</p>
+                </div>
+                <div class="card">
+                    <h3>Email Campaigns</h3>
+                    <p>Personalized email sequences that cut through the noise. A/B tested templates proven to get responses.</p>
+                </div>
+                <div class="card">
+                    <h3>LinkedIn Outreach</h3>
+                    <p>Strategic social selling on LinkedIn. Connect with decision-makers and build relationships that convert.</p>
+                </div>
+                <div class="card">
+                    <h3>Lead Research</h3>
+                    <p>Deep research on your target accounts. We identify the right contacts and gather intel for personalized outreach.</p>
+                </div>
+                <div class="card">
+                    <h3>Appointment Setting</h3>
+                    <p>We handle the entire scheduling process. Your calendar fills up with qualified, ready-to-buy prospects.</p>
+                </div>
+                <div class="card">
+                    <h3>Pipeline Development</h3>
+                    <p>End-to-end pipeline management. From first touch to handoff, we nurture leads through your funnel.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <section id="team">
+        <div class="container">
+            <h2 class="section-title">Meet Your Team</h2>
+            <p class="section-subtitle">Choose the expert that matches your immediate needs.</p>
+            
+            <div class="team-grid">
+                <div class="team-card">
+                    <h3>Jordan</h3>
+                    <span class="role">Senior SDR Consultant</span>
+                    <p class="specialty">SaaS & Enterprise Strategy</p>
+                    <p class="details">10+ years in B2B sales. The architect behind our high-converting scripts and strategies. Specializes in closing and negotiation.</p>
+                    <button class="btn-outline" onclick="selectConsultant('Jordan')">Book with Jordan</button>
+                </div>
+
+                <div class="team-card">
+                    <h3>Lian</h3>
+                    <span class="role">Lead Generation Expert</span>
+                    <p class="specialty">High-Volume Outreach</p>
+                    <p class="details">Expert in fintech and prospecting. Lian manages the day-to-day pipeline to ensure your calendar stays full of qualified meetings.</p>
+                    <button class="btn-outline" onclick="selectConsultant('Lian')">Book with Lian</button>
+                </div>
+
+                <div class="team-card">
+                    <h3>Mark</h3>
+                    <span class="role">Technical Operations Lead</span>
+                    <p class="specialty">CRM & Automation Setup</p>
+                    <p class="details">Software Engineer ensuring your leads sync perfectly with your stack. I handle the technical setup so Jordan and Lian can focus on your sales.</p>
+                    <button class="btn-outline" onclick="selectConsultant('Mark')">Tech Integration Call</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container contact-wrapper">
+            <div class="form-header">
+                <h2>Book Your Consultation</h2>
+                <p>Tell us about your needs and choose your preferred consultant.</p>
+            </div>
+            
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Work Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="company">Company Name *</label>
+                    <input type="text" id="company" name="company" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="consultant">Preferred Consultant</label>
+                    <select id="consultant" name="consultant">
+                        <option value="No Preference">No Preference</option>
+                        <option value="Jordan">Jordan (Strategy)</option>
+                        <option value="Lian">Lian (Outreach)</option>
+                        <option value="Mark">Mark (Tech Setup)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="topic">Topic of Interest *</label>
+                    <select id="topic" name="topic" required>
+                        <option value="">Select a topic...</option>
+                        <option value="Cold Calling">Cold Calling Services</option>
+                        <option value="Email Campaigns">Email Campaign Setup</option>
+                        <option value="LinkedIn Outreach">LinkedIn Outreach</option>
+                        <option value="Full Outsourcing">Full SDR Outsourcing</option>
+                        <option value="Custom">Custom Solution</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Tell Us About Your Needs</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary full-width">Request Consultation</button>
+                <p id="formStatus" class="status-message"></p>
+            </form>
+        </div>
+    </section>
+
+    <section id="hiring-cta">
+        <div class="container cta-content">
+            <div class="cta-text">
+                <h2>Join the RemoteSync Team</h2>
+                <p>Are you a top-tier SDR? We're looking for talent to help us scale.</p>
+            </div>
+            <a href="careers.html" class="btn-secondary">View Open Positions</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>RemoteSync</h3>
+                <p>Connecting Remote Talent. Your trusted partner for B2B sales development.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li>Cold Calling</li>
+                    <li>Email Campaigns</li>
+                    <li>LinkedIn Outreach</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4> <ul>
+                    <li><a href="index.html">About Us</a></li>
+                    <li><a href="careers.html" style="color: var(--accent-orange);">Careers (Hiring!)</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>hello@remote-sync.com</p>
+                <div class="social-links" style="margin-top: 1rem;">
+                    <a href="https://www.linkedin.com/company/remotesync/" target="_blank" class="company-social-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                        <span>Follow on LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2025 RemoteSync. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

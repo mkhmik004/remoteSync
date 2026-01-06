@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers | Remote Sync</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Remote<span class="highlight">Sync</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li> <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#contact" class="btn-primary">Book a Call</a></li>
+        </ul>
+    </nav>
+
+    <header id="hero" style="min-height: 40vh;">
+        <div class="container hero-content">
+            <h1>Join the Revolution</h1>
+            <p>Help us redefine how companies scale. We are looking for top-tier talent.</p>
+        </div>
+    </header>
+
+    <section id="contact">
+        <div class="container contact-wrapper">
+            <div class="form-header">
+                <h2>Apply Now</h2>
+                <p>Submit your application below. HR will review it shortly.</p>
+            </div>
+            
+            <form id="careerForm">
+                <div class="form-group">
+                    <label for="applicantName">Full Name *</label>
+                    <input type="text" id="applicantName" name="applicantName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="applicantEmail">Email Address *</label>
+                    <input type="email" id="applicantEmail" name="applicantEmail" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="position">Position Applying For *</label>
+                    <select id="position" name="position" required>
+                        <option value="">Select a role...</option>
+                        <option value="SDR - Junior">SDR - Junior</option>
+                        <option value="SDR - Senior">SDR - Senior</option>
+                        <option value="Account Manager">Account Manager</option>
+                        <option value="HR Specialist">HR Specialist</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="linkedin">LinkedIn / Portfolio URL *</label>
+                    <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="coverLetter">Why RemoteSync?</label>
+                    <textarea id="coverLetter" name="coverLetter" rows="4"></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary full-width">Submit Application</button>
+                <p id="careerStatus" class="status-message"></p>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>RemoteSync</h3>
+                <p>Connecting Remote Talent. Your trusted partner for B2B sales development.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li>Cold Calling</li>
+                    <li>Email Campaigns</li>
+                    <li>LinkedIn Outreach</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4> <ul>
+                    <li><a href="index.html">About Us</a></li>
+                    <li><a href="careers.html" style="color: var(--accent-orange);">Careers (Hiring!)</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>hello@remote-sync.com</p>
+                <div class="social-links" style="margin-top: 1rem;">
+                    <a href="https://www.linkedin.com/company/remotesync/" target="_blank" class="company-social-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                        <span>Follow on LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2025 RemoteSync. All rights reserved.
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
